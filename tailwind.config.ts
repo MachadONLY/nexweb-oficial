@@ -1,3 +1,5 @@
+// tailwind.config.ts
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,12 +10,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-sora)', 'sans-serif'], // Define 'sans' como a fonte Sora
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--background)", // Define uma cor personalizada para o background
+        foreground: "var(--foreground)", // Define uma cor personalizada para o foreground
       },
     },
   },
   plugins: [],
 };
+
 export default config;
