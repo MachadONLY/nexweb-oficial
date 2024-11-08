@@ -9,27 +9,27 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: "Social Media Marketing",
+    title: "Marketing de Mídias Sociais",
     description:
-      "Engage and expand your audience across social media platforms with our tailored marketing strategies. From content creation to ad campaigns, we connect you with your target demographic, leveraging data insights to craft compelling stories and foster meaningful interactions.",
+      "Engaje e expanda seu público nas plataformas de mídias sociais com nossas estratégias de marketing personalizadas. Desde criação de conteúdo até campanhas de anúncios, conectamos você com seu público-alvo, aproveitando insights de dados para criar histórias envolventes e fomentar interações significativas.",
     backgroundImage: '/instagram.svg',
   },
   {
-    title: "Digital Marketing",
+    title: "Marketing Digital",
     description:
-      "Maximize your online presence with our comprehensive digital marketing solutions. From search engine optimization to pay-per-click advertising, we develop strategies tailored to your business needs, ensuring you reach your target audience and achieve measurable results.",
+      "Maximize sua presença online com nossas soluções completas de marketing digital. Desde otimização para motores de busca até publicidade paga por clique, desenvolvemos estratégias personalizadas para as necessidades do seu negócio, garantindo que você atinja seu público-alvo e alcance resultados mensuráveis.",
     backgroundImage: '/digital.svg',
   },
   {
-    title: "Web Design & Development",
+    title: "Design e Desenvolvimento de Sites",
     description:
-      "Create a stunning online presence with our web design and development services. Our team crafts responsive, user-friendly websites that reflect your brand identity and provide an exceptional user experience, helping you stand out in the digital landscape.",
+      "Crie uma presença online impressionante com nossos serviços de design e desenvolvimento de sites. Nossa equipe cria sites responsivos e fáceis de usar que refletem a identidade da sua marca e proporcionam uma experiência excepcional ao usuário, ajudando você a se destacar no cenário digital.",
     backgroundImage: '/webdesign.svg',
   },
   {
     title: "SEO",
     description:
-      "We optimize your site's structure, content, and keywords to rank higher on search engine results pages. Our SEO services include keyword research, on-page and off-page optimization, and performance tracking to increase your visibility and drive organic traffic.",
+      "Otimizar a estrutura, conteúdo e palavras-chave do seu site para obter uma classificação mais alta nas páginas de resultados dos motores de busca. Nossos serviços de SEO incluem pesquisa de palavras-chave, otimização on-page e off-page, e acompanhamento de desempenho para aumentar sua visibilidade e gerar tráfego orgânico.",
     backgroundImage: '/google.svg',
   },
 ];
@@ -53,7 +53,7 @@ const Services: React.FC = () => {
               {/* Overlay escuro para contraste */}
               <div className="absolute inset-0 bg-black opacity-50 rounded-3xl pointer-events-none"></div>
 
-              <div className="flex flex-col justify-between items-start gap-3 z-10">
+              <div className="flex flex-col justify-between items-start hover:gap-3 z-10">
                 <h2 className="text-2xl font-bold text-white">{service.title}</h2>
                 <p className="text-white text-base mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {service.description}
